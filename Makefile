@@ -1,6 +1,6 @@
 obj-m += sharp.o
 
-export KROOT=/lib/modules/$(shell uname -r)/build
+KROOT := /lib/modules/$(shell uname -r)/build
 
 all:  modules
 
